@@ -65,7 +65,7 @@ public class DataExtractor {
         IContext context = contextService.getTemporary(languageLocation, project, dialect);
 
         ILanguageComponent component = Iterables.get(dialect.components(), 0);
-        HybridInterpreter interpreter = strategoRuntimeService.runtime(component, context, false);
+        HybridInterpreter interpreter = strategoRuntimeService.runtime(component, context);
 
         IStrategoTerm xdoc = strategoCommon.invoke(interpreter, ast, TRANSFORM_TO_XDOC);
         IStrategoTerm json = strategoCommon.invoke(interpreter, xdoc, TRANSFORM_TO_JSON);

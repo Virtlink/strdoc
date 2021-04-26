@@ -1,3 +1,10 @@
+#!/usr/bin/env bash
+set -o errexit
+set -o pipefail
+set -o noclobber
+set -o nounset
+#set -o xtrace
+
 # Get the relative path to this directory
 MY_PATH="`dirname \"$0\"`"
 

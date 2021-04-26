@@ -26,9 +26,9 @@ Second, run `strdoc.transform` to extract the documentation and save it as .json
 
 ```
 $ java \
-  -jar org.metaborg.strdoc.transform/target/org.metaborg.strdoc.transform-2.5.0-SNAPSHOT-jar-with-dependencies.jar \
-  --stratego /path/to/org.metaborg.meta.lang.stratego/target/org.metaborg.meta.lang.stratego-2.4.0-SNAPSHOT.spoofax-language \
-  --doc /path/to/org.metaborg.strdoc.lang/target/org.metaborg.strdoc.lang-2.4.0-SNAPSHOT.spoofax-language \
+  -jar org.metaborg.strdoc.transform/target/org.metaborg.strdoc.transform-2.6.0-SNAPSHOT-jar-with-dependencies.jar \
+  --stratego /path/to/org.metaborg.meta.lang.stratego/target/org.metaborg.meta.lang.stratego-2.6.0-SNAPSHOT.spoofax-language \
+  --doc /path/to/org.metaborg.strdoc.lang/target/org.metaborg.strdoc.lang-2.6.0-SNAPSHOT.spoofax-language \
   --project /path/to/spoofax-releng/strategoxt/strategoxt/stratego-libraries/lib/spec \
   --output /path/to/strdoc/org.metaborg.strdoc.website/
 ```
